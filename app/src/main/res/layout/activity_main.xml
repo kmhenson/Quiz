@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kmhenson.quiz.MainActivity"
+    tools:targetApi="11"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16sp"
+                android:layout_margin="4dp"
+                android:text="Select the answer that best responds to the question." />
+
+
+            <TextView
+                android:id="@+id/birth"
+                style="@style/QuestionFont"
+
+                android:text="Where was Harry Potter born?" />
+
+            <RadioGroup
+                android:id="@+id/birthradio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    style="@style/GryffFont"
+                    android:text="Number 4 Privet Drive" />
+
+                <RadioButton
+                    android:id="@+id/hollow"
+                    style="@style/HuffFont"
+                    android:text="Godrics Hollow" />
+
+                <RadioButton
+                    style="@style/SlythFont"
+                    android:text="Hogwarts" />
+
+                <RadioButton
+                    style="@style/RavFont"
+                    android:text="The Burrow" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/QuestionFont"
+                android:id="@+id/hippogriff"
+                android:text="What was the name of Sirius and Hagrid's hippogriff?" />
+
+            <RadioGroup
+                android:id="@+id/hippogriffgroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    style="@style/GryffFont"
+                    android:text="Albert" />
+
+                <RadioButton
+                    style="@style/HuffFont"
+                    android:text="Wonderwings" />
+
+                <RadioButton
+                    android:id="@+id/buckbeak"
+                    style="@style/SlythFont"
+                    android:text="Buckbeak" />
+
+                <RadioButton
+                    style="@style/RavFont"
+                    android:text="Feathers" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/QuestionFont"
+                android:text="Who sold Harry his first wand?" />
+
+            <RadioGroup
+                android:id="@+id/wandRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/ollivander"
+                    style="@style/GryffFont"
+                    android:text="Ollivander" />
+
+                <RadioButton
+                    style="@style/HuffFont"
+                    android:text="Dumbledore" />
+
+                <RadioButton
+                    style="@style/SlythFont"
+                    android:text="Hagrid" />
+
+                <RadioButton
+                    style="@style/RavFont"
+                    android:text="Florentesco" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/QuestionFont"
+                android:text="What was Hermione's Patronus?" />
+
+            <RadioGroup
+                android:id="@+id/patronus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    style="@style/GryffFont"
+                    android:text="Owl" />
+
+                <RadioButton
+                    style="@style/HuffFont"
+                    android:text="Doe" />
+
+                <RadioButton
+                    android:id="@+id/otter"
+                    style="@style/SlythFont"
+                    android:text="Otter" />
+
+                <RadioButton
+                    style="@style/RavFont"
+                    android:text="Rabbit" />
+            </RadioGroup>
+
+            <TextView
+
+                style="@style/QuestionFont"
+                android:text="Whose side was Snape on in the end?" />
+
+            <RadioGroup
+                android:id="@+id/snape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    style="@style/GryffFont"
+                    android:text="Dumbledore's" />
+
+                <RadioButton
+                    style="@style/HuffFont"
+                    android:text="Voldemort's" />
+
+                <RadioButton
+                    android:id="@+id/jerk"
+                    style="@style/SlythFont"
+                    android:text="His own, he was a selfish jerk" />
+
+                <RadioButton
+                    style="@style/RavFont"
+                    android:text="We may never really know" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/QuestionFont"
+                android:text="What kind of cat was Crookshanks?" />
+
+            <RadioGroup
+                android:id="@+id/crookshanks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    style="@style/GryffFont"
+                    android:text="Tabby" />
+
+                <RadioButton
+                    style="@style/HuffFont"
+                    android:text="Crookshanks wasn't even a cat" />
+
+                <RadioButton
+                    android:id="@+id/fluff"
+                    style="@style/SlythFont"
+                    android:text="Orange and fluffy" />
+
+                <RadioButton
+                    style="@style/RavFont"
+                    android:text="Black cat" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/QuestionFont"
+                android:text="Who did Ron go to the Yule Ball with?" />
+
+            <RadioGroup
+                android:id="@+id/ron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    style="@style/GryffFont"
+                    android:text="Luna Lovegood" />
+
+                <RadioButton
+                    style="@style/HuffFont"
+                    android:text="Hermione" />
+
+                <RadioButton
+                    style="@style/SlythFont"
+                    android:text="Parvati Patil" />
+
+                <RadioButton
+                    android:id="@+id/padma"
+                    style="@style/RavFont"
+                    android:text="Padma Patil" />
+                </RadioGroup>
+            <TextView
+                android:id="@+id/finalscore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="calculateScore"
+                android:text="Check Answer" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
